@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import cors from "cors";
 
 const PORT = process.env.PORT || 4000;
-const API_BASE = process.env.API_BASE || "https://scavenger.qa.gd.midnighttge.io";
+const API_BASE = process.env.API_BASE || "https://scavenger.prod.gd.midnighttge.io";
 
 const app = express();
 app.use(morgan("dev"));
