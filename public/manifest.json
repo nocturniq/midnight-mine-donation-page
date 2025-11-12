@@ -1,0 +1,16 @@
+{
+  "short_name": "Midnight Mine Donate",
+  "name": "Midnight Mine Donation Page",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "any",
+      "type": "image/ico+xml",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

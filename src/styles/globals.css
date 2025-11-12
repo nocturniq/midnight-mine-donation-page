@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+html {
+  font-size: 25px;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b1020;
+  background-image:
+    radial-gradient(900px 600px at 15% -10%, rgba(30,58,138,0.25) 0%, rgba(2,6,23,0) 60%),
+    radial-gradient(800px 500px at 120% 0%, rgba(8,47,73,0.25) 0%, rgba(2,6,23,0) 60%),
+    linear-gradient(145deg, #0b1020 0%, #0f172a 60%, #111827 100%);
+  color: #e5e7eb;
+  font-family: "JetBrains Mono", monospace;
+}
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: -0.025em;
+}
+
+::selection { background: rgba(59,130,246,0.35); color: #fff; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: #334155; border-radius: 8px; }
+*::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+.card, .panel, .box {
+  background: #111827;
+  border: 1px solid #1f2937;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.45);
+  border-radius: 12px;
+}
+
+input, textarea, select {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  outline: none;
+  border-radius: 8px;
+}
+input::placeholder, textarea::placeholder { color: #64748b; }
+input:focus, textarea:focus, select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+}
+
+button {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+  border-radius: 10px;
+  transition: transform .04s ease, border-color .15s ease, color .15s ease;
+}
+button:hover {
+  color: #3b82f6 !important;
+  border-color: #334155;
+}
+button:active { transform: translateY(1px); }
+
+.wallet-button-wrapper { opacity: 0.95; transition: opacity .2s ease; }
+.wallet-button-wrapper:hover { opacity: 1; }
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+/* Links / socials */
+a { color: #cbd5e1; }
+a:hover { color: #3b82f6; }
+
+a[href*="discord.gg"],
+a[href*="github.com"] {
+  opacity: 0.85;
+  transition: all 0.2s ease;
+  border-color: #334155 !important;
+}
+a[href*="discord.gg"]:hover,
+a[href*="github.com"]:hover {
+  opacity: 1;
+  color: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
